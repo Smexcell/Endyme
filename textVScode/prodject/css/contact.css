@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Rubik:ital,wght@1,500&display=swap');
+
+:root {
+    --primary-color: #05386b;
+    --secondary-color: rgb(92, 219, 149);
+    --secondary-colorx2: rgb(92, 219, 149, 0.50);
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: #FFCC66;
+    --success-colorx2:#eca92d;
+    --error-color: #d9534f;
+    --primaryx2-color: rgba(13,110,139,0.75);
+    --overlay-color:rgba(24,39,51,0.85);
+    --overlayx2-color:rgba(24,39,51,0.25);
+    --menu-speed:0.75s;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.4;
+}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.showcase{
+    background-color: var(--overlayx2-color);
+    color: #f4f4f4;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase::before{
+    content: '';
+    background: url(contact-background.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.showcase .showcase-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.showcase h1{
+    font-size: 4rem;
+}
+
+.showcase p{
+    font-size: 1.3rem;
+}
+
+.btn{
+    display: inline-block;
+    border: none;
+    background-color: var(--secondary-color);
+    color:#f4f4f4;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+}
+
+

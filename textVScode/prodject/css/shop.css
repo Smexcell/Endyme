@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Rubik:ital,wght@1,500&display=swap');
+
+
+:root {
+    --primary-color: #05386b;
+    --secondary-color: rgb(92, 219, 149);
+    --secondary-colorx2: rgb(92, 219, 149, 0.50);
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: rgb(255, 204, 102);
+    --success-colorx2:#eca92d;
+    --error-color: #d9534f;
+    --primaryx2-color: rgba(13,110,139,0.75);
+    --overlay-color:rgba(24,39,51,0.85);
+    --overlayx2-color:rgba(24,39,51,0.25);
+    --menu-speed:0.75s;
+}
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #FFFFF0;
+    line-height: 1.6;
+    background-color: #FFFFF0;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.shop{
+    height: 300vh;
+    margin: 0 auto;
+    justify-content: center;
+    position:relative;
+}
+
+.grid{
+    display: grid;
+    margin: 0 auto;
+}
+
+.showcase{
+    background: linear-gradient(rgba(5, 56, 107, .3), rgba(5, 56, 107, 0.9)), url(showcase.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    height: 100vh;
+    direction: ltr;
+    justify-content: center;
+}
+
+.showcase-container{
+    margin: 0 auto;
+    color: #FFFFF0;
+    height: 20em;
+    width: 50em;
+    justify-items: center;
+    align-items: center;
+    margin-top: 85%;
+}
+
+
+.showcase-container h1{
+    font-size: 3.7em;
+    padding:1em 0;
+    border-bottom: 0.1em solid black;
+    font-family: 'Lobster', cursive;
+}
+/*background: linear-gradient(rgba(5, 56, 107, .5), rgba(5, 56, 107, 0.5));*/
+.tickets{
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickets-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    column-gap: 2em;
+    margin: 0 10em;
+}
+.tickets-container h1{
+    /*Make ".footer-credentials" start on row 1 column 1, and span 1 rows and 1 columns*/
+    grid-area: 1 / 1 / span 1 / span 4;
+    text-align: center;
+    align-self: center;
+    font-size: 4em;
+    color: var(--secondary-color);
+}
+.grid-ticket-item h2{
+    color: var(--secondary-color);
+    font-family: 'Lobster', cursive;
+}
+.grid-ticket-item p{
+    min-height: 12em;
+    max-height: 12em;
+    overflow: hidden;
+}
+
+.grid-ticket-item{
+    display: grid;
+    gap:2em;
+    text-align: center;
+    padding: 2em;
+    height: 30em;
+    align-items: center;
+    font-size: 1.1em;
+    border-left: 4px solid var(--success-colorx2);
+    border-right: 4px solid var(--success-colorx2);
+    justify-items: center;
+    /*Make ".footer-credentials" start on row 1 column 1, and span 1 rows and 1 columns*/
+    grid-area: 2 / 1 / span 1 / span 4;
+    transition: all .2s ease-in-out;
+}
+.grid-ticket-item:hover{
+    transform: scale(1.1);
+    filter: brightness(120%);
+    /*box-shadow: 1px 2px 2px 1px #1ea058;*/
+}
+
+.ticket-item-1 {
+    /*Make ".footer-credentials" start on row 1 column 1, and span 1 rows and 1 columns*/
+    grid-area: 2 / 1 / span 1 / span 1;
+
+    font-weight: lighter;
+}
+.ticket-item-2 {
+    /*Make ".footer-credentials" start on row 1 column 1, and span 1 rows and 1 columns*/
+    grid-area: 2 / 2 / span 1 / span 1;
+    font-weight: lighter;
+}
+
+.ticket-item-3 {
+    /*Make ".footer-credentials" start on row 1 column 1, and span 1 rows and 1 columns*/
+    grid-area: 2 / 3 / span 1 / span 1;
+    font-weight: lighter;
+}
+
+.ticket-item-4 {
+    /*Make ".footer-credentials" start on row 1 column 1, and span 1 rows and 1 columns*/
+    grid-area: 2 / 4 / span 1 / span 1;
+    font-weight: lighter;
+
+}
+
+.banner{
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container {
+    height: 100%;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text{
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    row-gap: 2em;
+    font-size: 1.1em;
+}
+
+.banner-text p{
+    overflow: hidden;
+    max-height: 30em;
+    min-height: 30em;
+}
+.banner-text h1{
+    letter-spacing: 0.1em;
+    font-size: 2.3em;
+    color: var(--secondary-color);
+}
+
+.banner-picture{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    position: relative;
+}
+
+.banner-picture div {
+    position: relative;
+    border-radius: 1em;
+}
+
+div > h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.3em;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.banner-picture div:nth-child(1){
+    width: 450px;
+    height: 300px;
+    background:  url(hippie_1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner-picture div:nth-child(2){
+    width: 450px;
+    height: 300px;
+    background: url(hippie_2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner-picture div:nth-child(3){
+    width: 450px;
+    height: 300px;
+    background: url(hippie_3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.banner-picture div:nth-child(4){
+    width: 450px;
+    height: 300px;
+    background: url(hippie_4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
